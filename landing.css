@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: rgb(230,230,230);
+  background-img: linear-gradient(white, #ffc7d4);
 }
 
 .hover-card {
@@ -41,6 +41,11 @@ body {
   width: auto;
 }
 
+.card-img-wide {
+  width: 100%;
+  height: auto;
+}
+
 .title {
   position: absolute;
   width: 100%;
@@ -52,11 +57,13 @@ body {
   text-transform: uppercase;
   color: white;
   z-index: 1;
+  opacity: 0;
   transition: top .5s ease;
 }
 
 .hover-card:hover .title {
   top: 25%;
+  opacity: 1;
 }
 
 .button {
